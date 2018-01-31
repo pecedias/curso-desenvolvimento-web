@@ -1,0 +1,238 @@
+/* 
+* @author Paulo Dias
+* @version 0.1
+*/
+
+/* ========================= LAYOUT ========================= */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body, .inicio {
+	height: 100%;
+	overflow: auto;
+}
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	overflow-x: hidden;
+	background: #f1f1f1;
+}
+
+/* -- Barra de Navegação -- */
+.img-logo {
+	display: block;
+	height: 50px;
+	width: 231px;
+	background: url('../img/pcdesign-logo.png') no-repeat;
+	background-size: contain;
+	color: transparent;
+	background-color: #000;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+	padding: 0px 15px 0px 15px;
+	position: relative;
+	top: -0px;
+}
+
+nav.navbar-transparente {
+	padding: 30px 0px;
+	background: #000;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+	border: none;
+}
+
+/* -- Início -- */
+.inicio {
+	display: table;
+	width: 100%;
+	/* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%) */
+	background: url('../img/slide-inicio.jpg') no-repeat;
+	background-size: cover;
+}
+
+.texto-inicio {
+	display: table-cell;
+	color: black;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	background: rgba(0, 0, 0, .5);
+}
+
+.texto-inicio h1 {
+	display: inline-block;
+	border: 10px solid #fff;
+}
+
+.texto-inicio span {
+	font-size: 20px;
+}
+
+/* -- Alerta -- */
+.alerta {
+	margin-top: 10px;
+	text-align: center;
+}
+
+/* -- Portfólio -- */
+#portfolio {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+#portfolio h2 {
+	padding-bottom: 15px;
+}
+
+.foto-legenda {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0, 0, 0, .5);
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+	transition: transform .2s;
+	text-align: center;
+	padding-top: 80px;
+}
+
+.foto-legenda:hover figcaption {
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+.foto-legenda:hover img {
+	transform: scale(1.1);
+}
+
+.zoom {
+    
+    background-color: #fff;
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.spc {
+	padding-bottom: 25px;
+}
+
+/* -- Sobre -- */
+#sobre {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	background: #ffffff;
+}
+
+#sobre h2 {
+	padding-bottom: 15px;
+}
+
+.img-sobre {
+	width: 800px;
+	height: 360px;
+}
+
+/* -- Contato -- */
+#contato {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+#contato h2 {
+	padding-bottom: 15px;
+}
+
+.img-contato {
+	padding-left: 292px;
+	padding-top: 120px;
+}
+
+/* -- Rodapé -- */
+footer {
+	background: #000;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+	padding: 35px;
+}
+
+.redes-sociais {
+	float: left;
+	padding-right: 10px;
+}
+
+.copyright {
+	padding-top: 17px;
+	float: right;
+	color: #ffffff;
+}
+
+/* ========================= TIPOGRAFIA ========================= */
+
+h1 {
+	font-weight: 900;
+	margin-bottom: 50px;
+}
+
+.foto-legenda h3 {
+	font-weight: 900;
+}
+
+.foto-legenda p {
+	font-size: 12px;
+}
+
+/* ========================= MEDIA QUERIES ========================= */
+
+/* xs < 768px */
+@media screen and (max-width: 767px) {
+
+	h1 {
+		font-size: 50px;
+	}
+
+	.texto-inicio h3 {
+		font-size: 20px;
+	}
+
+}
+
+/* sm ≥ 768px */
+@media screen and (min-width: 768px) {
+
+	h1 {
+		font-size: 70px;
+	}	
+
+}
+
+/* md ≥ 992px */
+@media screen and (min-width: 992px) {
+
+	h1 {
+		font-size: 80px;
+	}
+
+}
+
+/* lg ≥ 1200px */
+@media screen and (min-width: 1200px) {
+
+	h1 {
+		font-size: 100px;
+	}
+
+}

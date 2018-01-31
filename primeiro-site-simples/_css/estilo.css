@@ -1,0 +1,255 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+	
+body {
+	font-family: Arial, sans-serif;
+	background-color: #dddddd;
+	color: rgba(0,0,0, 1);
+}
+
+div#interface {
+	width: 900px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	margin: -20px auto 0px auto;
+	padding: 10px;
+}
+
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+header#cabecalho {
+	background: url("../_imagens/logo.png") no-repeat;
+	height: 150px;
+	border-bottom: 1px #cecece solid;
+}
+
+/* Formatação do Menu */
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu {
+	display: block;
+}
+
+nav#menu ul {
+	list-style: none;
+	position: relative;
+	top: 50px;
+	left: 500px;
+	font-size: 14pt;
+}
+
+nav#menu li {
+	display: inline-block;
+	padding-right: 0px;
+}
+
+nav#menu a {
+	text-decoration: none;
+	color: #666666;
+}
+
+nav#menu a:hover {
+	color: #003366;
+}
+
+/* Formatação das Divisões */
+
+section#corpo {
+	display: block;
+	width: 577px;
+	float: left;
+	border-right: 1px #cecece solid;
+	padding-right: 10px;
+}
+
+header#bread-crumps a {
+	text-decoration: none;
+	color: #000000;
+}
+
+header#bread-crumps h2 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 3px;
+}
+
+article#principal h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 12pt;
+	color: #ffffff;
+	background-color: #003366;
+	margin: -4px;
+	padding: 10px;
+	
+}
+
+aside#lateral {
+	display: block;
+	color: #ffffff;
+	background-color: #eeeeee;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	width: 306px;
+	height: 550px;
+	float: right;
+	margin-top: 8px;
+}
+
+aside#lateral h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 12pt;
+	margin: 5px;
+	background-color: #003366;
+	padding: 10px;
+}
+
+iframe#filme {
+	width: 300px;
+	padding-left: 3px;
+	margin-top: 5px;
+}
+
+/* Formatação de Tabela */
+
+table#linguagens-aprendidas {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10pt;
+	width: 575px;
+	border: 1px solid #cecece;	
+	border-spacing: 0px;
+	border-collapse: collapse;
+	margin-left: 0px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+table#linguagens-aprendidas td {
+	border: 1px solid #cecece;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table#linguagens-aprendidas td.ce {
+	color: #ffffff;
+	background-color: #003366;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+table#linguagens-aprendidas td.cd {
+	background-color: #eeeeee;
+}
+
+table#linguagens-aprendidas caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bolder;
+}
+
+/* Formatação de imagens com legendas */
+
+figure.facebook {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	left: 4px;
+	color: #003366;
+}
+
+figure.facebook figcaption {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	opacity: 0;
+	position: absolute;
+	width: 22%;
+	top: 75px;
+	left: 6px;
+	padding: 3px;
+	transition: opacity .5s;
+}
+
+figure.facebook figcaption h2 {
+	font-weight: normal;
+}
+
+figure.facebook:hover figcaption {
+	opacity: 1;
+}
+figure.instagram {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: -100px;
+	left: 115px;
+	color: #666666;
+}
+
+figure.instagram figcaption {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	opacity: 0;
+	position: absolute;
+	width: 22%;
+	top: 65px;
+	left: 0px;
+	padding: 3px;
+	transition: opacity .5s;
+}
+
+figure.instagram figcaption h2 {
+	font-weight: normal;
+}
+
+figure.instagram:hover figcaption {
+	opacity: 1;
+}
+figure.twitter {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: -197px;
+	left: 220px;
+	color: #1b95e0;
+}
+
+figure.twitter figcaption {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	opacity: 0;
+	position: absolute;
+	width: 22%;
+	top: 65px;
+	left: 15px;
+	padding: 3px;
+	transition: opacity .5s;
+}
+
+figure.twitter figcaption h2 {
+	font-weight: normal;
+}
+
+figure.twitter:hover figcaption {
+	opacity: 1;
+}
+footer#rodape {
+	clear: both;
+	border-top: 1px #cecece solid;
+}
+
+footer#rodape p {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	font-size: 16px;
+}
